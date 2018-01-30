@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using madcapUserClicks.Models;
 
+
 namespace madcapUserClicks.Controllers
 {
     public class HomeController : Controller
     {
+       // public IActionResult Index()
+     //   {
+      //      return View();
+     //   }
         public IActionResult Index()
         {
+          //  String v = Request.QueryString["ID"];
+       //     if (v != null)
+            {
+         //       ViewData["Message"] = "ID: ";
+          //      ViewData["Mesage"] = v;
+
+               // Response.Write("ID: ");
+                //Response.Write(v);
+            }
             return View();
         }
 
