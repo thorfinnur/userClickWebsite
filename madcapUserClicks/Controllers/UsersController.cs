@@ -61,15 +61,6 @@ namespace madcapUserClicks.Controllers
       //  [HttpPost]
         public async Task<IActionResult> LinkAsync(int? id)
         {
-            // User user;
-
-            // user.userID = id;
-            //  user.linkOpenedDate = DateTime.Now;
-            //  _context.Add(user);
-            // _context.SaveChanges();
-            // id = id.Value;
-           // return Ok("This should appear: " + id.ToString());
-
             _context.Add(new User { userID = id ?? default(int), linkOpenedDate = DateTime.Now });
             await _context.SaveChangesAsync();
 
